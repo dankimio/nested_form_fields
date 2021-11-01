@@ -5,18 +5,10 @@ gemfile:
   - gemfiles/rails_5.2.gemfile
   - gemfiles/rails_6.0.gemfile
 rvm:
-  - 2.3.8
-  - 2.4.5
-  - 2.5.3
-  - 2.6.5
-  - 2.7.0
+  - 2.6.8
+  - 2.7.4
+  - 3.0.2
 services:
   - xvfb
 script:
 - bundle exec rspec
-matrix:
-  exclude:
-  - rvm: 2.3.8
-    gemfile: gemfiles/rails_6.0.gemfile
-  - rvm: 2.4.5
-    gemfile: gemfiles/rails_6.0.gemfile
