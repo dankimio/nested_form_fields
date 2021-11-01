@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Test Nested Form Fields Gem</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <%= stylesheet_link_tag :application, :media => "all" %>
+    <%= javascript_include_tag :application %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <%= render 'layouts/navigation' %>
+        <%= render 'layouts/messages' %>
+      </header>
+      <div id="main">
+        <% User.order(:name).each do |user| %>
+          <%= link_to user.name, edit_user_path(user) %>
+          |
+        <% end %>
+        <%= link_to 'New User', new_user_path %>
+        <%= yield %>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
