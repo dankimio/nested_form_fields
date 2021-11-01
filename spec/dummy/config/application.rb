@@ -9,8 +9,6 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 require 'jquery-rails'
-require 'haml'
-require "haml-rails"
 
 Bundler.require
 require "nested_form_fields"
@@ -57,4 +55,3 @@ module Dummy
     config.assets.version = '1.0'
   end
 end
-

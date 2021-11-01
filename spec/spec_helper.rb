@@ -16,8 +16,6 @@ Test::Unit.run = true if defined?(Test::Unit) && Test::Unit.respond_to?(:run=)
 require 'assert_difference'
 require 'sqlite3'
 
-require 'haml'
-
 # Add this to load Capybara integration:
 require 'capybara/rspec'
 require 'capybara/rails'
@@ -48,4 +46,3 @@ end
 # Forces all threads to share the same connection. This works on
 # Capybara because it starts the web server in a thread.
 ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
-
