@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.version       = NestedFormFields::VERSION
   gem.license       = 'MIT'
 
-  gem.add_dependency 'rails', '>= 3.2.0'
+  gem.add_dependency 'rails', '>= 5.2.0'
   gem.add_dependency 'jquery-rails'
 
   gem.add_development_dependency 'appraisal'
