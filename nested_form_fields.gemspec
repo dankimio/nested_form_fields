@@ -26,4 +26,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'capybara'
   gem.add_development_dependency 'geckodriver-helper'
   gem.add_development_dependency 'selenium-webdriver', '> 3.0.5'
+  gem.add_development_dependency 'sqlite3', '~> 1.4'
 end
